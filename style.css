@@ -1,0 +1,209 @@
+ 
+
+ 
+.picture{
+    width: 120px;
+}
+
+ .navlist li a{
+    font-size: 14px;
+    
+ }
+ 
+ .navlist li a:hover {
+    border-bottom: 1px solid black;
+    margin: auto;
+    width: 100%;
+    display: block;
+    
+}
+
+
+
+/* cross navigation */
+
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+
+.middle-bar{
+    margin-top: 0;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* when navigation is collapsed */
+
+.navbar-toggler.collapsed .top-bar{
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 10px;
+    position: absolute;
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0deg);
+    position: absolute;
+    top: 20px;
+}
+
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(./background2.jpg)no-repeat center center/cover;
+    background-blend-mode: darken;
+    height: 70vh;
+}
+
+
+
+
+.card{
+    margin: 0px 20px;
+}
+
+
+.background5{
+    background: url(./background5.avif);
+    background-size: cover;
+    height: 65vh;
+    margin: 0px 75px;
+}
+
+
+.contra{
+    margin: 0px 20px;
+}
+
+
+.underline-custom{
+    text-decoration: none;
+}
+
+.underline-custom:hover{
+    text-decoration: underline;
+}
+
+
+.bg-custom{
+    background-color: #eeecec;
+}
+
+.padding-custom{
+    padding: 60px;
+}
+
+
+.div-custom p a{
+    font-size: 12px;
+    color: #434343 !important;
+}
+@media only screen and (max-width : 1000px){
+    .navlist li a:hover {
+        border-bottom: 1px solid black;
+        margin: auto;
+        width: 100%;
+        display: none;
+        
+    }
+    .padding-custom{
+        padding: 0px;
+    }
+    .contra{
+        margin: 0px 0px;
+    }
+    
+
+    .navlist{
+           margin-top: 0;
+    }
+    .background{
+        height: 50vh;
+    }
+
+    .card{
+        margin: 0px 0px;
+    }
+
+    .background5{
+        margin: 0px 0px;
+    }
+
+}
+
+@media only screen and (max-width : 1025px){
+    .background5{
+        height: 92vh !important;
+    }
+}
+
+@media only screen and (max-width : 950px){
+    .background5{
+        height: 50vh !important;
+    }
+}
+
+@media only screen and (max-width : 400px){
+    .background5{
+        height: 63vh !important;
+    }
+}
+
+@media only screen and (max-width : 300px){
+    .background5{
+        height: 76vh !important;
+    }
+}
